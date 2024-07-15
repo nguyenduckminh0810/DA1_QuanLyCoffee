@@ -11,23 +11,23 @@ import java.util.Date;
  * @author Admin
  */
 public class LoaiSanPhamEntity {
-        private String MaLoaiSP;
+        private String ID_LoaiSP;
         private String TenLoai;
 
     public LoaiSanPhamEntity() {
     }
 
-    public LoaiSanPhamEntity(String MaLoaiSP, String TenLoai) {
-        this.MaLoaiSP = MaLoaiSP;
+    public LoaiSanPhamEntity(String ID_LoaiSP, String TenLoai) {
+        this.ID_LoaiSP = ID_LoaiSP;
         this.TenLoai = TenLoai;
     }
 
     public String getID_LoaiSP() {
-        return MaLoaiSP;
+        return ID_LoaiSP;
     }
 
     public void setID_LoaiSP(String ID_LoaiSP) {
-        this.MaLoaiSP = ID_LoaiSP;
+        this.ID_LoaiSP = ID_LoaiSP;
     }
 
     public String getTenLoai() {

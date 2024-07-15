@@ -12,53 +12,54 @@ import java.util.Date;
  * @author HP
  */
 public class BanChiTietEntity {
-    private int MaHD;
-    private int MaBan;
-    private Date ThoiGianCoNguoi;
-    private boolean Don;
+    private int ID_HoaDon;
+    private int ID_Ban;
+    private Date thoidiemCoNguoi;
+    private boolean banChinh;
     
     public BanChiTietEntity() {
     }
 
-    public BanChiTietEntity(int MaHD, int MaBan, Date ThoiGianCoNguoi, boolean Don) {
-        this.MaHD = MaHD;
-        this.MaBan = MaBan;
-        this.ThoiGianCoNguoi = ThoiGianCoNguoi;
-        this.Don = Don;
+    public BanChiTietEntity(int ID_HoaDon, int ID_Ban, Date thoidiemCoNguoi, boolean banChinh) {
+        this.ID_HoaDon = ID_HoaDon;
+        this.ID_Ban = ID_Ban;
+        this.thoidiemCoNguoi = thoidiemCoNguoi;
+        this.banChinh = banChinh;
     }
 
-    public int getMaHD() {
-        return MaHD;
+    
+
+    public int getID_HoaDon() {
+        return ID_HoaDon;
     }
 
-    public void setMaHD(int MaHD) {
-        this.MaHD = MaHD;
+    public void setID_HoaDon(int ID_HoaDon) {
+        this.ID_HoaDon = ID_HoaDon;
     }
 
-    public int getMaBan() {
-        return MaBan;
+    public int getID_Ban() {
+        return ID_Ban;
     }
 
-    public void setMaBan(int MaBan) {
-        this.MaBan = MaBan;
+    public void setID_Ban(int ID_Ban) {
+        this.ID_Ban = ID_Ban;
     }
 
-    public Date getThoiGianCoNguoi() {
-        return ThoiGianCoNguoi;
+    public Date getThoidiemCoNguoi() {
+        return thoidiemCoNguoi;
     }
 
-    public void setThoiGianCoNguoi(Date ThoiGianCoNguoi) {
-        this.ThoiGianCoNguoi = ThoiGianCoNguoi;
+    public void setThoidiemCoNguoi(Date thoidiemCoNguoi) {
+        this.thoidiemCoNguoi = thoidiemCoNguoi;
     }
 
-    public boolean isDon() {
-        return Don;
+    public boolean isBanChinh() {
+        return banChinh;
     }
 
-    public void setDon(boolean Don) {
-        this.Don = Don;
+    public void setBanChinh(boolean banChinh) {
+        this.banChinh = banChinh;
     }
-
     
     
 }

@@ -4,109 +4,109 @@ import java.util.Date;
 
 public class HoaDonEntity {
 
-    private int MaHD;
-    private String MaNV;
-    private Date NgayTao;
-    private boolean TrangThai;
-    private boolean TrangThaiThanhToan;
-    private int ThanhTien;
-    private String LyDoHuy;
-    private int SoLuongHuy;
-    private String GhiChu;
+    private int idHoaDon;
+    private String idNhanVien;
+    private Date ngayTao;
+    private boolean trangThai;
+    private boolean trangThaiTT;
+    private int thanhTien;
+    private String lyDoHuy;
+    private int slSanPhamHuy;
+    private String ghiChu;
     private String SDT;
-    private String Ten;
-    private String DiaChi;
-    private int TienShip;
+    private String ten;
+    private String diaChi;
+    private int tienShip;
 
     public HoaDonEntity() {
     }
 
-    public HoaDonEntity(int MaHD, String MaNV, Date NgayTao, boolean TrangThai, boolean TrangThaiThanhToan, int ThanhTien, String LyDoHuy, int SoLuongHuy, String GhiChu, String SDT, String Ten, String DiaChi, int TienShip) {
-        this.MaHD = MaHD;
-        this.MaNV = MaNV;
-        this.NgayTao = NgayTao;
-        this.TrangThai = TrangThai;
-        this.TrangThaiThanhToan = TrangThaiThanhToan;
-        this.ThanhTien = ThanhTien;
-        this.LyDoHuy = LyDoHuy;
-        this.SoLuongHuy = SoLuongHuy;
-        this.GhiChu = GhiChu;
+    public HoaDonEntity(int idHoaDon, String idNhanVien, Date ngayTao, boolean trangThai, boolean trangThaiTT, int thanhTien, String lyDoHuy, int slSanPhamHuy, String ghiChu, String SDT, String ten, String diaChi, int tienShip) {
+        this.idHoaDon = idHoaDon;
+        this.idNhanVien = idNhanVien;
+        this.ngayTao = ngayTao;
+        this.trangThai = trangThai;
+        this.trangThaiTT = trangThaiTT;
+        this.thanhTien = thanhTien;
+        this.lyDoHuy = lyDoHuy;
+        this.slSanPhamHuy = slSanPhamHuy;
+        this.ghiChu = ghiChu;
         this.SDT = SDT;
-        this.Ten = Ten;
-        this.DiaChi = DiaChi;
-        this.TienShip = TienShip;
+        this.ten = ten;
+        this.diaChi = diaChi;
+        this.tienShip = tienShip;
     }
 
-    public int getMaHD() {
-        return MaHD;
+    public int getIdHoaDon() {
+        return idHoaDon;
     }
 
-    public void setMaHD(int MaHD) {
-        this.MaHD = MaHD;
+    public void setIdHoaDon(int idHoaDon) {
+        this.idHoaDon = idHoaDon;
     }
 
-    public String getMaNV() {
-        return MaNV;
+    public String getIdNhanVien() {
+        return idNhanVien;
     }
 
-    public void setMaNV(String MaNV) {
-        this.MaNV = MaNV;
+    public void setIdNhanVien(String idNhanVien) {
+        this.idNhanVien = idNhanVien;
     }
 
     public Date getNgayTao() {
-        return NgayTao;
+        return ngayTao;
     }
 
-    public void setNgayTao(Date NgayTao) {
-        this.NgayTao = NgayTao;
+    public void setNgayTao(Date ngayTao) {
+        this.ngayTao = ngayTao;
     }
 
     public boolean isTrangThai() {
-        return TrangThai;
+        return trangThai;
     }
 
-    public void setTrangThai(boolean TrangThai) {
-        this.TrangThai = TrangThai;
+    public void setTrangThai(boolean trangThai) {
+        this.trangThai = trangThai;
     }
 
-    public boolean isTrangThaiThanhToan() {
-        return TrangThaiThanhToan;
+    public boolean isTrangThaiTT() {
+        return trangThaiTT;
     }
 
-    public void setTrangThaiThanhToan(boolean TrangThaiThanhToan) {
-        this.TrangThaiThanhToan = TrangThaiThanhToan;
+    public void setTrangThaiTT(boolean trangThaiTT) {
+        this.trangThaiTT = trangThaiTT;
     }
 
     public int getThanhTien() {
-        return ThanhTien;
+        return thanhTien;
     }
 
-    public void setThanhTien(int ThanhTien) {
-        this.ThanhTien = ThanhTien;
+    public void setThanhTien(int thanhTien) {
+        this.thanhTien = thanhTien;
     }
 
     public String getLyDoHuy() {
-        return LyDoHuy;
+        return lyDoHuy;
     }
 
-    public void setLyDoHuy(String LyDoHuy) {
-        this.LyDoHuy = LyDoHuy;
+    public void setLyDoHuy(String lyDoHuy) {
+        this.lyDoHuy = lyDoHuy;
     }
 
-    public int getSoLuongHuy() {
-        return SoLuongHuy;
+    public int getSlSanPhamHuy() {
+        return slSanPhamHuy;
     }
 
-    public void setSoLuongHuy(int SoLuongHuy) {
-        this.SoLuongHuy = SoLuongHuy;
+    public void setSlSanPhamHuy(int slSanPhamHuy) {
+        this.slSanPhamHuy = slSanPhamHuy;
     }
 
     public String getGhiChu() {
-        return GhiChu;
+        return ghiChu;
     }
 
-    public void setGhiChu(String GhiChu) {
-        this.GhiChu = GhiChu;
+    public void setGhiChu(String ghiChu) {
+        this.ghiChu = ghiChu;
     }
 
     public String getSDT() {
@@ -118,27 +118,27 @@ public class HoaDonEntity {
     }
 
     public String getTen() {
-        return Ten;
+        return ten;
     }
 
-    public void setTen(String Ten) {
-        this.Ten = Ten;
+    public void setTen(String ten) {
+        this.ten = ten;
     }
 
     public String getDiaChi() {
-        return DiaChi;
+        return diaChi;
     }
 
-    public void setDiaChi(String DiaChi) {
-        this.DiaChi = DiaChi;
+    public void setDiaChi(String diaChi) {
+        this.diaChi = diaChi;
     }
 
     public int getTienShip() {
-        return TienShip;
+        return tienShip;
     }
 
-    public void setTienShip(int TienShip) {
-        this.TienShip = TienShip;
+    public void setTienShip(int tienShip) {
+        this.tienShip = tienShip;
     }
 
 }

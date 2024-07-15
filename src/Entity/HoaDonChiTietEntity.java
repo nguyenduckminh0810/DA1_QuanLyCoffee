@@ -1,92 +1,93 @@
+
 package Entity;
 
 public class HoaDonChiTietEntity {
 
-    private int MaHD;
-    private String MaSP;
-    private int SoLuong;
-    private int Gia;
-    private int TongGia;
-    private boolean TrangThaiThanhToan;
-    private String LyDoHuy;
-    private String GhiChu;
+    private int ID_Hoadon;
+    private String ID_SanPHam;
+    private int Soluong;
+    private int gia;
+    private int tongGia;
+    private boolean trangThai;
+    private String lyDoHuy;
+    private String ghiChu;
 
     public HoaDonChiTietEntity() {
     }
 
-    public HoaDonChiTietEntity(int MaHD, String MaSP, int SoLuong, int Gia, int TongGia, boolean TrangThaiThanhToan, String LyDoHuy, String GhiChu) {
-        this.MaHD = MaHD;
-        this.MaSP = MaSP;
-        this.SoLuong = SoLuong;
-        this.Gia = Gia;
-        this.TongGia = TongGia;
-        this.TrangThaiThanhToan = TrangThaiThanhToan;
-        this.LyDoHuy = LyDoHuy;
-        this.GhiChu = GhiChu;
+    public HoaDonChiTietEntity(int ID_Hoadon, String ID_SanPHam, int Soluong, int gia, int tongGia, boolean trangThai, String lyDoHuy, String ghiChu) {
+        this.ID_Hoadon = ID_Hoadon;
+        this.ID_SanPHam = ID_SanPHam;
+        this.Soluong = Soluong;
+        this.gia = gia;
+        this.tongGia = tongGia;
+        this.trangThai = trangThai;
+        this.lyDoHuy = lyDoHuy;
+        this.ghiChu = ghiChu;
     }
 
-    public int getMaHD() {
-        return MaHD;
+    public int getID_Hoadon() {
+        return ID_Hoadon;
     }
 
-    public void setMaHD(int MaHD) {
-        this.MaHD = MaHD;
+    public void setID_Hoadon(int ID_Hoadon) {
+        this.ID_Hoadon = ID_Hoadon;
     }
 
-    public String getMaSP() {
-        return MaSP;
+    public String getID_SanPHam() {
+        return ID_SanPHam;
     }
 
-    public void setMaSP(String MaSP) {
-        this.MaSP = MaSP;
+    public void setID_SanPHam(String ID_SanPHam) {
+        this.ID_SanPHam = ID_SanPHam;
     }
 
-    public int getSoLuong() {
-        return SoLuong;
+    public int getSoluong() {
+        return Soluong;
     }
 
-    public void setSoLuong(int SoLuong) {
-        this.SoLuong = SoLuong;
+    public void setSoluong(int Soluong) {
+        this.Soluong = Soluong;
     }
 
     public int getGia() {
-        return Gia;
+        return gia;
     }
 
-    public void setGia(int Gia) {
-        this.Gia = Gia;
+    public void setGia(int gia) {
+        this.gia = gia;
+    }
+
+    public boolean isTrangThai() {
+        return trangThai;
+    }
+
+    public void setTrangThai(boolean trangThai) {
+        this.trangThai = trangThai;
     }
 
     public int getTongGia() {
-        return TongGia;
+        return tongGia;
     }
 
-    public void setTongGia(int TongGia) {
-        this.TongGia = TongGia;
-    }
-
-    public boolean isTrangThaiThanhToan() {
-        return TrangThaiThanhToan;
-    }
-
-    public void setTrangThaiThanhToan(boolean TrangThaiThanhToan) {
-        this.TrangThaiThanhToan = TrangThaiThanhToan;
+    public void setTongGia(int tongGia) {
+        this.tongGia = tongGia;
     }
 
     public String getLyDoHuy() {
-        return LyDoHuy;
+        return lyDoHuy;
     }
 
-    public void setLyDoHuy(String LyDoHuy) {
-        this.LyDoHuy = LyDoHuy;
+    public void setLyDoHuy(String lyDoHuy) {
+        this.lyDoHuy = lyDoHuy;
     }
 
     public String getGhiChu() {
-        return GhiChu;
+        return ghiChu;
     }
 
-    public void setGhiChu(String GhiChu) {
-        this.GhiChu = GhiChu;
+    public void setGhiChu(String ghiChu) {
+        this.ghiChu = ghiChu;
     }
 
 }

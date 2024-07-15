@@ -11,25 +11,25 @@ import java.util.Date;
  * @author Admin
  */
 public class NhanVienEntity {
-    private String MaNV;
+    private String id_Nhanvien;
     private String TenNV;
-    private boolean GioiTinh;
-    private Date NgaySinh;
+    private boolean gender;
+    private Date Ngaysinh;
     private String DiaChi;
     private String Email;
     private String SDT;
-    private String Username;
-    private String MatKhau;
+    private String userName;
+    private String Pass;
     private boolean VaiTro;
     private boolean TrangThai;
     private String Hinh;
 
-    public String getMaNV() {
-        return MaNV;
+    public String getId_Nhanvien() {
+        return id_Nhanvien;
     }
 
-    public void setMaNV(String MaNV) {
-        this.MaNV = MaNV;
+    public void setId_Nhanvien(String id_Nhanvien) {
+        this.id_Nhanvien = id_Nhanvien;
     }
 
     public String getTenNV() {
@@ -40,20 +40,20 @@ public class NhanVienEntity {
         this.TenNV = TenNV;
     }
 
-    public boolean isGioiTinh() {
-        return GioiTinh;
+    public boolean isGender() {
+        return gender;
     }
 
-    public void setGioiTinh(boolean GioiTinh) {
-        this.GioiTinh = GioiTinh;
+    public void setGender(boolean gender) {
+        this.gender = gender;
     }
 
-    public Date getNgaySinh() {
-        return NgaySinh;
+    public Date getNgaysinh() {
+        return Ngaysinh;
     }
 
-    public void setNgaySinh(Date NgaySinh) {
-        this.NgaySinh = NgaySinh;
+    public void setNgaysinh(Date Ngaysinh) {
+        this.Ngaysinh = Ngaysinh;
     }
 
     public String getDiaChi() {
@@ -80,20 +80,20 @@ public class NhanVienEntity {
         this.SDT = SDT;
     }
 
-    public String getUsername() {
-        return Username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String Username) {
-        this.Username = Username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getMatKhau() {
-        return MatKhau;
+    public String getPass() {
+        return Pass;
     }
 
-    public void setMatKhau(String MatKhau) {
-        this.MatKhau = MatKhau;
+    public void setPass(String Pass) {
+        this.Pass = Pass;
     }
 
     public boolean isVaiTro() {
@@ -119,6 +119,4 @@ public class NhanVienEntity {
     public void setHinh(String Hinh) {
         this.Hinh = Hinh;
     }
-
-
 }

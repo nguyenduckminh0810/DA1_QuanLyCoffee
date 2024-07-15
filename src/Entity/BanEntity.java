@@ -4,56 +4,59 @@ package Entity;
 import java.util.Date;
 
 public class BanEntity {
-    private int MaBan;
-    private boolean TrangThai;
-    private boolean HoatDong;
-    private int SoLuongChoNgoi;
+    private int idBan;
+    private boolean trangThai;
+    private boolean hoatDong;
+    private int soluongcho;
     
     public BanEntity() {
     }
 
-    public int getMaBan() {
-        return MaBan;
+    public BanEntity(int idBan, boolean trangThai, boolean hoatDong, int soluongcho) {
+        this.idBan = idBan;
+        this.trangThai = trangThai;
+        this.hoatDong = hoatDong;
+        this.soluongcho = soluongcho;
     }
 
-    public void setMaBan(int MaBan) {
-        this.MaBan = MaBan;
+    
+
+    public int getIdBan() {
+        return idBan;
+    }
+
+    public void setIdBan(int idBan) {
+        this.idBan = idBan;
     }
 
     public boolean isTrangThai() {
-        return TrangThai;
+        return trangThai;
     }
 
-    public void setTrangThai(boolean TrangThai) {
-        this.TrangThai = TrangThai;
+    public void setTrangThai(boolean trangThai) {
+        this.trangThai = trangThai;
     }
 
     public boolean isHoatDong() {
-        return HoatDong;
+        return hoatDong;
     }
 
-    public void setHoatDong(boolean HoatDong) {
-        this.HoatDong = HoatDong;
+    public void setHoatDong(boolean hoatDong) {
+        this.hoatDong = hoatDong;
     }
 
-    public int getSoLuongChoNgoi() {
-        return SoLuongChoNgoi;
+    public int getSoluongcho() {
+        return soluongcho;
     }
 
-    public void setSoLuongChoNgoi(int SoLuongChoNgoi) {
-        this.SoLuongChoNgoi = SoLuongChoNgoi;
+    public void setSoluongcho(int soluongcho) {
+        this.soluongcho = soluongcho;
     }
 
-    public BanEntity(int MaBan, boolean TrangThai, boolean HoatDong, int SoLuongChoNgoi) {
-        this.MaBan = MaBan;
-        this.TrangThai = TrangThai;
-        this.HoatDong = HoatDong;
-        this.SoLuongChoNgoi = SoLuongChoNgoi;
-    }
  
     @Override
     public String toString() {
-        return "Bàn:"+ MaBan + " ("+SoLuongChoNgoi+")";
+        return "Bàn:"+ idBan + " ("+soluongcho+")";
     }
     
 }

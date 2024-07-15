@@ -1,79 +1,83 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package Entity;
 
+/**
+ *
+ * @author Admin
+ */
 public class SanPhamEntity {
-    private String MaSP;
-    private String TenSP;
-    private int Gia;
-    private String MaDonViSP;
-    private String MaLoaiSP;
-    private boolean TrangThai;
-    
+    private String id_sp;
+    private String ten_sp;
+    private int gia_sp;
+    private String id_donviSP;
+    private String id_loaiSP;
+    private boolean Trangthai;
     public SanPhamEntity(){
         
     }
 
-    public SanPhamEntity(String MaSP, String TenSP, int Gia, String MaDonViSP, String MaLoaiSP, boolean TrangThai) {
-        this.MaSP = MaSP;
-        this.TenSP = TenSP;
-        this.Gia = Gia;
-        this.MaDonViSP = MaDonViSP;
-        this.MaLoaiSP = MaLoaiSP;
-        this.TrangThai = TrangThai;
+    public SanPhamEntity(String id_sp, String ten_sp, int gia_sp, String id_donviSP, String id_loaiSP, boolean Trangthai) {
+        this.id_sp = id_sp;
+        this.ten_sp = ten_sp;
+        this.gia_sp = gia_sp;
+        this.id_donviSP = id_donviSP;
+        this.id_loaiSP = id_loaiSP;
+        this.Trangthai = Trangthai;
     }
 
-    public String getMaSP() {
-        return MaSP;
+    public String getId_sp() {
+        return id_sp;
     }
 
-    public void setMaSP(String MaSP) {
-        this.MaSP = MaSP;
+    public void setId_sp(String id_sp) {
+        this.id_sp = id_sp;
     }
 
-    public String getTenSP() {
-        return TenSP;
+    public String getTen_sp() {
+        return ten_sp;
     }
 
-    public void setTenSP(String TenSP) {
-        this.TenSP = TenSP;
+    public void setTen_sp(String ten_sp) {
+        this.ten_sp = ten_sp;
     }
 
-    public int getGia() {
-        return Gia;
+    public int getGia_sp() {
+        return gia_sp;
     }
 
-    public void setGia(int Gia) {
-        this.Gia = Gia;
+    public void setGia_sp(int gia_sp) {
+        this.gia_sp = gia_sp;
     }
 
-    public String getMaDonViSP() {
-        return MaDonViSP;
+    public String getId_donviSP() {
+        return id_donviSP;
     }
 
-    public void setMaDonViSP(String MaDonViSP) {
-        this.MaDonViSP = MaDonViSP;
+    public void setId_donviSP(String id_donviSP) {
+        this.id_donviSP = id_donviSP;
     }
 
-    public String getMaLoaiSP() {
-        return MaLoaiSP;
+    public String getId_loaiSP() {
+        return id_loaiSP;
     }
 
-    public void setMaLoaiSP(String MaLoaiSP) {
-        this.MaLoaiSP = MaLoaiSP;
+    public void setId_loaiSP(String id_loaiSP) {
+        this.id_loaiSP = id_loaiSP;
     }
 
-    public boolean isTrangThai() {
-        return TrangThai;
+    public boolean isTrangthai() {
+        return Trangthai;
     }
 
-    public void setTrangThai(boolean TrangThai) {
-        this.TrangThai = TrangThai;
+    public void setTrangthai(boolean Trangthai) {
+        this.Trangthai = Trangthai;
     }
-
-
 
     @Override
     public String toString(){
-        return TenSP;
+        return ten_sp;
     }
 }

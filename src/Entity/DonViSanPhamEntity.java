@@ -9,36 +9,43 @@ package Entity;
  * @author Admin
  */
 public class DonViSanPhamEntity {
-    private String MaDonViSP;
-    private String TenDonVi;
-    private int KichThuoc;
+    private String ID_DonviSP;
+    private String TenDonvi;
+    private int Kichthuoc;
     private int ThemTien;
     
     public DonViSanPhamEntity() {
     }
 
-    public String getMaDonViSP() {
-        return MaDonViSP;
+    public DonViSanPhamEntity(String ID_DonviSP, String TenDonvi, int Kichthuoc, int ThemTien) {
+        this.ID_DonviSP = ID_DonviSP;
+        this.TenDonvi = TenDonvi;
+        this.Kichthuoc = Kichthuoc;
+        this.ThemTien = ThemTien;
     }
 
-    public void setMaDonViSP(String MaDonViSP) {
-        this.MaDonViSP = MaDonViSP;
+    public String getID_DonviSP() {
+        return ID_DonviSP;
     }
 
-    public String getTenDonVi() {
-        return TenDonVi;
+    public void setID_DonviSP(String ID_DonviSP) {
+        this.ID_DonviSP = ID_DonviSP;
     }
 
-    public void setTenDonVi(String TenDonVi) {
-        this.TenDonVi = TenDonVi;
+    public String getTenDonvi() {
+        return TenDonvi;
     }
 
-    public int getKichThuoc() {
-        return KichThuoc;
+    public void setTenDonvi(String TenDonvi) {
+        this.TenDonvi = TenDonvi;
     }
 
-    public void setKichThuoc(int KichThuoc) {
-        this.KichThuoc = KichThuoc;
+    public int getKichthuoc() {
+        return Kichthuoc;
+    }
+
+    public void setKichthuoc(int Kichthuoc) {
+        this.Kichthuoc = Kichthuoc;
     }
 
     public int getThemTien() {
@@ -48,17 +55,10 @@ public class DonViSanPhamEntity {
     public void setThemTien(int ThemTien) {
         this.ThemTien = ThemTien;
     }
-
-    public DonViSanPhamEntity(String MaDonViSP, String TenDonVi, int KichThuoc, int ThemTien) {
-        this.MaDonViSP = MaDonViSP;
-        this.TenDonVi = TenDonVi;
-        this.KichThuoc = KichThuoc;
-        this.ThemTien = ThemTien;
-    }
     
     @Override
     public String toString(){
-        return TenDonVi;
+        return TenDonvi;
     }
 
     public String getThemTien(String selectByName) {
